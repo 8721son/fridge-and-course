@@ -1,0 +1,19 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+  http2:
+    enabled: true
+        
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+
+  datasource:
+    url: jdbc:mysql://pofol.cyfguisfpxth.ap-northeast-2.rds.amazonaws.com:3306/gangmi?serverTimezone=Asia/Seoul
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: gangmi
+    password: ruemfkddl1!
+    

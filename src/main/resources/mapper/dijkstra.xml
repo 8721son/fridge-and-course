@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper
+	namespace="com.km.pofol.repository.DijkstraRepository">
+
+	<select id="findAllCity" resultType="com.km.pofol.model.City">
+		SELECT * FROM gangmi.CITY;
+	</select>
+	
+	<select id="findTouristByCity" resultType="com.km.pofol.model.Tourist">
+		SELECT * FROM gangmi.TOURIST_SITE where city=#{city};
+	</select>
+	
+	<select id="findTouristById" resultType="com.km.pofol.model.Tourist">
+		SELECT * FROM gangmi.TOURIST_SITE where id=#{id};
+	</select>
+	
+</mapper>
